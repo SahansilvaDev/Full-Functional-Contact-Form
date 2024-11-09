@@ -9,15 +9,20 @@
 </head>
 <body>
     <main>
-        <!-- Form -->
+
+
         <form class="contact-form" action="includes/mailer.inc.php" method="post">
             <p>Contact Form</p>
             <input type="text" name="fullname" placeholder="Full Name">
             <input type="email" name="email" placeholder="Email">
             <input type="text" name="subject" placeholder="Subject">
             <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button type="submit" name="submit">Send</button>
-        </form>
+             <button type="submit" name="submit">Send</button> 
+             
+
+
+        </form> 
+
         <!-- Message -->
         <div><?php if(isset($_GET["mailsend"])){
             if($_GET["mailsend"] === "succeeded"){
